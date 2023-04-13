@@ -1,0 +1,64 @@
+<div id="header">
+    <span class="myclass1">Every</span>
+    <span class="myclass2">one can</span>
+    <span class="myclass3">succeed.</span>
+</div>
+<p> One machine can do the work of fifty ordinary men.
+    <span class="myclass4">No machine can do the work of one extraordinary man.</span>
+</p>
+
+<table>
+    <tr>
+        <th colspan="">class name</th>
+        <th colspan="">color</th>
+        <th colspan="">on hover</th>
+    </tr>
+    <tr>
+        <td>span.myclass1</td>
+        <td>pink</td>
+        <td>blue</td>
+    </tr>
+    <tr>
+        <td>span.myclass2</td>
+        <td>pink</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>span.myclass1</td>
+        <td>orange</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>span.myclass4</td>
+        <td>red</td>
+        <td>-</td>
+    </tr>
+
+</table>
+<style>
+    p>span {
+        color: red;
+    }
+
+    #header span {
+        color: pink;
+    }
+
+    span {
+        color: green;
+    }
+
+    #header *:last-child {
+        color: orange;
+    }
+
+    #header span:first-child:hover {
+        color: blue;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #000000;
+    }
+</style>
